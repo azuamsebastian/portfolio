@@ -1,6 +1,19 @@
 import FadeIn from '@/components/motion/FadeIn';
 import profile from '@/data/profile.json';
 
+// Links to a resume file in public/: opens in a new tab, or downloads it when `download` is set
+function ResumeLink({ file, label, download = false }) {
+  return (
+    <a
+      href={`/${file}`}
+      {...(download ? { download: file } : { target: '_blank', rel: 'noopener noreferrer' })}
+      className="text-primary underline-offset-4 decoration-primary hover:underline"
+    >
+      {label}
+    </a>
+  );
+}
+
 export default function About() {
   return (
     <section id="about" className="py-18 md:py-24 px-6 md:px-8">
@@ -26,17 +39,12 @@ export default function About() {
               ))}
             </div>
 
-            {/* Resume — last 2 of 8 columns, aligned to the bottom of the bio */}
-            <div className="md:col-span-2 md:col-start-7 md:self-end md:text-right">
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-sans text-primary underline underline-offset-4 decoration-line hover:decoration-primary transition-colors"
-              >
-                View Resume
-              </a>
-            </div>
+            {/* Resume — one line, last 2 of 8 columns, aligned to the bottom of the bio */}
+            <p className="md:col-span-2 md:col-start-7 md:self-end md:text-right text-sm font-sans text-secondary">
+              View resume in <ResumeLink file="resume.pdf" label="PDF" />
+              <br />
+              or download <ResumeLink file="resume.md" label=".md" download />
+            </p>
           </div>
         </FadeIn>
       </div>
