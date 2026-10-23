@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Dark-only palette. The default gray scale is removed so only these named colors exist. */
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Text */
+  --color-primary: #fafafa;   /* titles, headings, items, links — 19.4:1 */
+  --color-secondary: #a3a3a3; /* paragraphs — 7.9:1 */
+  --color-tertiary: #7a7a7a;  /* meta, labels, lists at rest — 4.6:1 */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Lines and surfaces */
+  --color-background: #0a0a0a;
+  --color-surface: #1a1a1a;   /* image placeholders */
+  --color-line: #262626;      /* every divider and border */
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* On/off blink for the hero caption dot */
+  --animate-blink: blink 1.2s steps(1, end) infinite;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
   }
 }
 
+:root {
+  color-scheme: dark;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desktop scale: everything sized in rem (type, spacing, content width) grows 10%, the same
+   as viewing the site at 110% zoom. Breakpoints use the browser default, so they don't move. */
+@media (min-width: 64rem) {
+  html {
+    font-size: 110%;
+  }
 }

@@ -1,0 +1,281 @@
+[
+  {
+    "slug": "ai-vendor-payments",
+    "title": "Agentic Workflow to Pay Vendors On Time",
+    "subtitle": "Turning accounts payable from manual data entry into exception management, with AI agents doing the routine work",
+    "tags": [
+      "Product Design",
+      "AI",
+      "Logistics",
+      "Payments"
+    ],
+    "summary": "A task-based accounts payable system for Nuvocargo where AI agents and the AP team share the work of paying carriers on time.",
+    "year": "2026",
+    "role": "Sr. Product Designer & Builder",
+    "company": "Nuvocargo",
+    "category": "product-work",
+    "sections": [
+      {
+        "heading": "Context",
+        "body": "As a freight broker, Nuvocargo needed to pay carriers for every completed load. Before issuing each payment, the finance team had to manually collect and approve key documents such as the Proof of Delivery (POD) and the carrier’s invoice."
+      },
+      {
+        "heading": "Problem",
+        "body": "Payments were taking too long to go out, and it was affecting our credit score and reputation with carriers."
+      },
+      {
+        "heading": "Process",
+        "body": "We started by researching the root causes of the delayed payments:\n- Carriers weren’t sending documents on time.\n- Documents were collected and validated manually.\n- Rejections weren’t clear, and there was no tool to follow up on pending documents.\n\nNext, we built the foundational pieces the agentic workflow needed, such as automated document validation and line item statuses for the Purchase Order.\n\nLastly, we defined the criteria for a Purchase Order to be executed in the TMS, which triggered the payment in TriumphPay:\n- POD approved\n- Invoice approved\n- All payable line items approved",
+        "images": [
+          {
+            "src": "/images/projects/ai-vendor-payments/whiteboard.png",
+            "alt": "Whiteboard mapping the carrier invoice and payment workflow, including approval scenarios and statuses",
+            "width": 1424,
+            "height": 767
+          }
+        ]
+      },
+      {
+        "heading": "Solution",
+        "body": "We built an agentic workflow triggered when the shipment arrived at its destination. The agent texted the driver to request the POD, and if it couldn’t get it, reached out to the dispatcher. It then requested the invoice from the carrier’s billing department.\n\nOnce the documents were in the system, the agent validated them automatically. If a document couldn’t be collected or validated, it escalated to a human with all the context needed to know who to contact.\n\nOnce all the criteria were met, the Purchase Order was executed and the carrier was paid.",
+        "images": [
+          {
+            "src": "/images/projects/ai-vendor-payments/pay-vendor-workflow.png",
+            "alt": "NuvoOS shipments table with POD and invoice statuses, a shipment’s financials tab where the Pay Vendor agentic workflow flags an invoice mismatch, and the workflow’s completed conditions: POD approved, invoice approved, payment issued via TriumphPay",
+            "width": 3840,
+            "height": 2160
+          }
+        ]
+      },
+      {
+        "heading": "Outcome",
+        "body": "Increased efficiency in the finance team, positioning them to handle exceptions rather than repetitive tasks, and ultimately reducing the time to pay carriers.",
+        "testimonials": [
+          {
+            "quote": "Sebas brings a calm and collected presence to the team, consistently focusing on finding simple solutions to highly complex problems. His contributions are specially strong when balancing a scrappy execution mindset with thoughtful product thinking. He asks well-framed questions and takes time to think deeply about the problem, which leads to smarter solutions.",
+            "name": "S. Grodzins",
+            "role": "Engineering Manager"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "customer-invoicing",
+    "title": "System Design to Invoice Customers and Improve Cash Flow",
+    "subtitle": "Redesigning how invoices and financial data come together so the team can bill customers faster",
+    "tags": [
+      "Product Design",
+      "Systems Design",
+      "Logistics",
+      "Finance"
+    ],
+    "summary": "A redesign of Nuvocargo’s Financials Tab and accounts receivable workflow, built to get invoices out faster and improve cash flow.",
+    "year": "2026",
+    "role": "Sr. Product Designer & Builder",
+    "company": "Nuvocargo",
+    "category": "product-work",
+    "sections": [
+      {
+        "heading": "Context",
+        "body": "A load could only be invoiced to a customer once it met certain criteria, such as being delivered to its destination and having a complete set of documents."
+      },
+      {
+        "heading": "Problem",
+        "body": "A common challenge in freight brokerage is a cash flow shortage. Brokers must pay carriers shortly after a shipment is delivered, while shippers can take 30 to 60 days to pay their invoices. Every day an invoice goes out late widens that gap.\n\nAt Nuvocargo, the finance team lacked a tool that showed which delivered loads were ready to be invoiced and which were still missing documentation.\n\nAdditionally, the experience wasn’t built for finance reps to quickly create invoices from within their workflow. It required going back and forth between interfaces."
+      },
+      {
+        "heading": "Process",
+        "body": "We started by understanding how the team was operating. Their tools were scattered, and some of the data was inconsistent. People on the same team worked with different tools, such as data dashboards and spreadsheets, because NuvoOS wasn’t giving them the visibility they needed.\n\nFrom there, we defined the stages a load goes through before it’s ready to invoice."
+      },
+      {
+        "heading": "Solution",
+        "body": "We redesigned the data tables with clearer stages and visibility into which invoicing requirements were met. We added new statuses and filters, reorganized the columns, and added a side panel for each Sales Order so reps could review and execute it quickly. For loads with defects, the team could see what was missing and who in the operation to follow up with.\n\nI owned the end-to-end execution and deployment of this project using Piloto, our internal coding platform.",
+        "images": [
+          {
+            "src": "/images/projects/customer-invoicing/receivables-redesign.png",
+            "alt": "NuvoOS Receivables table with Ready To Invoice view, POD and line item statuses, next to a Sales Order side panel with documents, revenue line items, order summary, and an Execute button",
+            "width": 3840,
+            "height": 2160
+          }
+        ]
+      },
+      {
+        "heading": "Outcome",
+        "body": "Gave the finance team clear visibility into which loads were ready to invoice and made it easier to execute them, reducing the time to invoice customers and improving cash flow.",
+        "testimonials": [
+          {
+            "quote": "Thanks for the constant push you make with the operation to make the project succeed. I know working with the ops team can be really difficult, however sometimes we need a push from someone like you to make things happen. You were on top of the project since day one.",
+            "name": "S. Gutierrez",
+            "role": "Ops Manager"
+          }
+        ]
+      },
+      {
+        "heading": "Vision",
+        "body": "This was the foundational phase of a larger effort to automate Sales Order execution once all the criteria were met, the same way we did for carrier Purchase Orders. At the time, customers had a wide range of invoicing preferences that our system hadn’t standardized yet, so standardizing them was the next step toward automation."
+      }
+    ]
+  },
+  {
+    "slug": "customer-facing-platform",
+    "title": "Prototyping and Deployment of a Customer-Facing Platform",
+    "subtitle": "Prototyping the Control Tower in code to give 4PL shippers visibility and insights into their freight",
+    "tags": [
+      "Product Design",
+      "AI",
+      "Prototyping",
+      "Logistics"
+    ],
+    "summary": "Designing the front end of Nuvocargo’s Control Tower, the customer-facing platform for 4PL shippers, and prototyping it in code.",
+    "year": "2026",
+    "role": "Sr. Product Designer & Builder",
+    "company": "Nuvocargo",
+    "category": "product-work",
+    "sections": [
+      {
+        "heading": "Context",
+        "body": "Nuvocargo’s 4PL (Fourth Party Logistics) customers had access to the Control Tower, an external-facing platform that surfaced data from the TMS so customers could see the status of their freight."
+      },
+      {
+        "heading": "Problem",
+        "body": "As the growth strategy shifted toward 4PL accounts, the Control Tower became a key resource for attracting new customers and increasing the satisfaction of existing ones."
+      },
+      {
+        "heading": "Process",
+        "body": "I began the redesign by conducting research with internal stakeholders and with people at different levels on the customers’ side. This helped me understand what shippers in this segment valued most from their logistics providers:\n- Visibility into their loads and daily operations\n- Insights into their service performance and freight spend"
+      },
+      {
+        "heading": "Solution",
+        "body": "I used our tech stack and agentic coding to prototype the new front end of the Control Tower. The redesign gave shippers clear visibility into their active loads, with a new drawer component to preview each load’s details. They could also see historical data for each lane, with AI-generated insights to help them improve service performance and optimize freight spend.\n\nOn this project I partnered with members of the C-suite. My output was a code branch with every design decision built in, using AI to eliminate the design-to-engineering handoff.",
+        "carousel": true,
+        "images": [
+          {
+            "src": "/images/projects/customer-facing-platform/control-tower-1.png",
+            "width": 3024,
+            "height": 1724,
+            "alt": "Control Tower overview: a map of active shipments with filters for All Shipments, Need Attention, Picking Up Today, and Delivering Today, and a drawer showing a shipment’s pickup, delivery, and tracking milestones"
+          },
+          {
+            "src": "/images/projects/customer-facing-platform/control-tower-2.png",
+            "width": 3024,
+            "height": 1718,
+            "alt": "Cost and Service Performance dashboard with volume, average cost per pound, on-time delivery, and tender acceptance, above a map of the shipper’s supply chain network"
+          },
+          {
+            "src": "/images/projects/customer-facing-platform/control-tower-3.png",
+            "width": 3024,
+            "height": 1724,
+            "alt": "AI-generated insights powered by NuvoAI showing how much spend the shipper can recover and how much on-time delivery can improve, above a table of cost and service performance by delivery location"
+          },
+          {
+            "src": "/images/projects/customer-facing-platform/control-tower-4.png",
+            "width": 3024,
+            "height": 1724,
+            "alt": "Lane detail for Dallas, TX to Houston, TX with a route map, lane metrics, and AI prompts for saving money and improving service on the lane"
+          }
+        ]
+      },
+      {
+        "heading": "Outcome",
+        "body": "The redesign drove higher engagement from existing customers and generated interest from prospects."
+      }
+    ],
+    "preview": {
+      "src": "/images/projects/customer-facing-platform/control-tower-1.png",
+      "width": 3024,
+      "height": 1724
+    }
+  },
+  {
+    "slug": "agentic-appointment-scheduling",
+    "title": "UI Design for Agentic Appointment Scheduling",
+    "subtitle": "Designing how people follow AI agents as they schedule pickups and deliveries, and step in when something goes wrong",
+    "tags": [
+      "Product Design",
+      "AI",
+      "Design Systems",
+      "Logistics"
+    ],
+    "summary": "New design system components that show the progress of the agentic workflow for appointment scheduling at Nuvocargo, and make escalations clear and actionable.",
+    "year": "2025",
+    "role": "Sr. Product Designer",
+    "company": "Nuvocargo",
+    "category": "product-work",
+    "sections": [
+      {
+        "heading": "Context",
+        "body": "Every shipment has a pickup and a delivery, and sometimes more than one of each. Every stop needs a scheduled appointment. We automated appointment scheduling with AI agents that emailed, called, or logged into facility portals to confirm when a shipment could be picked up or dropped off."
+      },
+      {
+        "heading": "Problem",
+        "body": "As we started implementing agentic workflows across the freight brokerage lifecycle, we needed a new way to display those automations so users could easily follow their progress. When an AI agent escalated a workflow, users needed clarity on what the issue was and what action they could take to solve it."
+      },
+      {
+        "heading": "Process",
+        "body": "I partnered with the engineering team building this automation to understand the different use cases and the ways appointments could be scheduled at pickup and delivery locations."
+      },
+      {
+        "heading": "Solution",
+        "body": "I used our design system to create new components that displayed the progress of these workflows, and the information around them, in a clear, actionable way. Users could see when an AI agent was already working on an appointment, or when there was an issue that needed to be solved. For escalations, the stop showed the facility’s contact details so the user could resolve it right away.",
+        "images": [
+          {
+            "src": "/images/projects/agentic-appointment-scheduling/appointment-scheduling-flow.png",
+            "width": 3907,
+            "height": 2850,
+            "alt": "Appointment scheduling flow: from a shipment’s stops, users request an appointment from the Scheduling Agent or set one manually by email or facility portal; the stop then shows the agent’s progress, and escalates to human review with the facility’s contact details when needed"
+          }
+        ]
+      },
+      {
+        "heading": "Outcome",
+        "body": "Customer Ops no longer needed to contact facilities to schedule appointments, and only stepped in when human input was needed."
+      }
+    ]
+  },
+  {
+    "slug": "enterprise-end-to-end-solution",
+    "title": "Scope and Design of an End-to-End Solution for Enterprise Customers",
+    "subtitle": "Extending the TMS to support multi-stop shipments so Nuvocargo could sign its first 4PL enterprise customer",
+    "tags": [
+      "Product Design",
+      "Enterprise",
+      "Strategy",
+      "Logistics"
+    ],
+    "summary": "Scoping and designing the changes across the freight lifecycle that let Nuvocargo’s TMS support enterprise shippers and their multi-stop shipments.",
+    "year": "2024",
+    "role": "Sr. Product Designer",
+    "company": "Nuvocargo",
+    "category": "product-work",
+    "sections": [
+      {
+        "heading": "Context",
+        "body": "In 2024, we were working to sign our first 4PL enterprise customer. These shippers operated differently from the customers our TMS was originally built for."
+      },
+      {
+        "heading": "Problem",
+        "body": "The first version of our TMS didn’t fully support the way enterprise customers operated. To sign our first multi-million-dollar contract, our product needed to handle how they worked."
+      },
+      {
+        "heading": "Process",
+        "body": "We dove deep into their end-to-end operation to understand what fell outside our standard flow.\n\nOne of the main differences was that these shippers serviced their own customers, delivering goods to different customers’ warehouses in a single shipment. In other words, multi-stop shipments."
+      },
+      {
+        "heading": "Solution",
+        "body": "The different stops of a shipment needed to be accounted for during quoting, pricing, appointment scheduling, tracking, and invoicing. We scoped and designed every adjustment the v1 workflow needed to handle this operation across the entire freight lifecycle."
+      },
+      {
+        "heading": "Outcome",
+        "body": "We signed our first 4PL enterprise customer, a multi-million-dollar contract.",
+        "testimonials": [
+          {
+            "quote": "Sebas is a strong partner for getting projects from 0-1. His skills are great to help the team visualize how things would look in a future state and communicate them to users and stakeholders. Sebas keeps a positive attitude and he's not afraid to roll up his sleeves, taking on more than a typical designer.",
+            "name": "B. Santos",
+            "role": "Business Operations"
+          }
+        ]
+      }
+    ]
+  }
+]

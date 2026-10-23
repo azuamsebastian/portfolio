@@ -1,0 +1,12 @@
+[
+  { "name": "Claude Code", "description": "Everyday assistant, PRDs, tech specs, code" },
+  { "name": "Figma", "description": "UI design, prototyping, and design systems" },
+  { "name": "Framer", "description": "Interactive prototypes and marketing sites" },
+  { "name": "Pencil", "description": "Design-to-code cleanup and handoff" },
+  { "name": "Weavy", "description": "AI image generation and creative exploration" },
+  { "name": "Lovable", "description": "No-code product building" },
+  { "name": "Next.js", "description": "Web development" },
+  { "name": "Linear", "description": "Issue tracking and engineering handoff" },
+  { "name": "Notion", "description": "Documentation, PRDs, and knowledge bases" },
+  { "name": "Adobe CC", "description": "Creative Suite for visual work" }
+]
