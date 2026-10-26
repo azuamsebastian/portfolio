@@ -90,7 +90,9 @@ function Testimonial({ quote, name, role }) {
   );
 }
 
-function CaseStudySection({ heading, body, images, testimonials, carousel = false }) {
+function CaseStudySection({ heading, body, images: allImages, testimonials, carousel = false }) {
+  // Images marked "hidden" stay in the data but aren't shown
+  const images = allImages?.filter((img) => !img.hidden);
   const hasImages = images && images.length > 0;
   // One image spans the full width; three sit in a row; anything else pairs up
   const columns = !hasImages || images.length === 1 ? '' : images.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2';

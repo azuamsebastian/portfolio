@@ -17,18 +17,19 @@
     "sections": [
       {
         "heading": "Context",
-        "body": "As a freight broker, Nuvocargo needed to pay carriers for every completed load. Before issuing each payment, the finance team had to manually collect and approve key documents such as the Proof of Delivery (POD) and the carrier’s invoice."
+        "body": "As a cross-border freight broker between Mexico and the US, Nuvocargo needed to pay carriers for every completed load. Before issuing each payment, the finance team had to manually collect and approve key documents such as the Proof of Delivery (POD) and the carrier’s invoice."
       },
       {
         "heading": "Problem",
-        "body": "Payments were taking too long to go out, and it was affecting our credit score and reputation with carriers."
+        "body": "Carrier payments were consistently delayed, which hurt our credit score and reputation with carriers. As a result, carriers charged us higher rates, lowering the brokerage’s margins."
       },
       {
         "heading": "Process",
-        "body": "We started by researching the root causes of the delayed payments:\n- Carriers weren’t sending documents on time.\n- Documents were collected and validated manually.\n- Rejections weren’t clear, and there was no tool to follow up on pending documents.\n\nNext, we built the foundational pieces the agentic workflow needed, such as automated document validation and line item statuses for the Purchase Order.\n\nLastly, we defined the criteria for a Purchase Order to be executed in the TMS, which triggered the payment in TriumphPay:\n- POD approved\n- Invoice approved\n- All payable line items approved",
+        "body": "We started by sitting with the Finance and Carrier Ops teams to understand the root causes of the delayed payments:\n- The Proof of Delivery went through multiple handoffs across different departments on the carrier’s side.\n- Once our team received the documents, they had to manually verify that the data matched our system.\n- Rejection reasons weren’t clear, and there was no tool for the team to follow up on pending documents.\n\nNext, we built the foundational pieces the agentic workflow needed, such as automated document validation and line item statuses for the Purchase Order.\n\nLastly, we defined the criteria for a Purchase Order to be executed in the TMS, which triggered the payment in TriumphPay:\n- POD approved\n- Invoice approved\n- All payable line items approved",
         "images": [
           {
-            "src": "/images/projects/ai-vendor-payments/whiteboard.png",
+            "hidden": true,
+          "src": "/images/projects/ai-vendor-payments/whiteboard.png",
             "alt": "Whiteboard mapping the carrier invoice and payment workflow, including approval scenarios and statuses",
             "width": 1424,
             "height": 767
@@ -37,7 +38,7 @@
       },
       {
         "heading": "Solution",
-        "body": "We built an agentic workflow triggered when the shipment arrived at its destination. The agent texted the driver to request the POD, and if it couldn’t get it, reached out to the dispatcher. It then requested the invoice from the carrier’s billing department.\n\nOnce the documents were in the system, the agent validated them automatically. If a document couldn’t be collected or validated, it escalated to a human with all the context needed to know who to contact.\n\nOnce all the criteria were met, the Purchase Order was executed and the carrier was paid.",
+        "body": "We built an agentic workflow that started the moment a shipment arrived at its destination, and took care of the repetitive tasks in three steps:\n- Collection: The agent reached out to the driver via SMS to request the POD. If it couldn’t get it, it reached out to the dispatcher, and later requested the invoice from the billing department.\n- Validation: Once the documents were in the system, the agent checked that their data matched our records. When the invoice total didn’t match, the agent created a line item for the difference with a “Review” status, so a rep could find where it came from and decide whether to approve or reject it.\n- Execution: Once the POD, the invoice and all payable line items were approved, the purchase order was executed automatically and payment was issued through the ERP.\n\nIf a document couldn’t be collected or validated within the expected time, the agent created an escalation with all the context needed for a human to step in and take the right action.",
         "images": [
           {
             "src": "/images/projects/ai-vendor-payments/pay-vendor-workflow.png",
@@ -49,7 +50,7 @@
       },
       {
         "heading": "Outcome",
-        "body": "Increased efficiency in the finance team, positioning them to handle exceptions rather than repetitive tasks, and ultimately reducing the time to pay carriers.",
+        "body": "Time to pay carriers decreased by 55%, and purchase orders that met all criteria were executed and paid without anyone touching them. Finance and Carrier Ops only stepped in when the agent raised an escalation, shifting their role from manual data entry and follow-ups to incident management. Paying carriers stopped taking up more bandwidth with every new load and became a scalable workflow that also improved Nuvocargo’s credit score and reputation with carriers.",
         "testimonials": [
           {
             "quote": "Sebas brings a calm and collected presence to the team, consistently focusing on finding simple solutions to highly complex problems. His contributions are specially strong when balancing a scrappy execution mindset with thoughtful product thinking. He asks well-framed questions and takes time to think deeply about the problem, which leads to smarter solutions.",
