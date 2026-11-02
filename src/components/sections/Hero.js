@@ -59,12 +59,15 @@ export default function Hero({ substackPosts = [] }) {
           <div className="flex flex-col justify-center min-h-[calc(100svh-15rem)] pb-12 md:min-h-0 md:pb-0 md:flex-row md:items-center md:justify-between md:gap-8">
             <FadeIn>
               <p className="text-2xl md:text-[2rem] leading-[1.3] md:leading-[1.25] tracking-tight text-primary max-w-2xl relative z-10" style={{ fontFamily: 'var(--font-sans), system-ui, sans-serif' }}>
-                I design and build digital products that simplify complex workflows and drive business impact.
+                I build products and AI workflows that increase operational efficiency and drive business impact.
               </p>
               <p className="mt-9 flex items-start gap-2 text-xs font-mono text-tertiary max-w-2xl md:max-w-md relative z-10">
                 {/* Blinking dot, vertically centred on the first line of the caption */}
                 <span aria-hidden="true" className="mt-[0.4em] size-1.5 shrink-0 rounded-full bg-current animate-blink motion-reduce:animate-none" />
-                <StreamingText text="Recent experience: Owning the end-to-end implementation of features and systems to enable an AI rollup strategy." />
+                <StreamingText
+                  text="Recent experience: Owned the end-to-end implementation of systems and features that enabled 3X profitability growth at Nuvocargo."
+                  link={{ label: 'Nuvocargo', href: 'https://www.nuvocargo.com' }}
+                />
               </p>
             </FadeIn>
             {SHOW_PORTRAIT && (
