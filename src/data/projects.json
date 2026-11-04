@@ -21,7 +21,7 @@
       },
       {
         "heading": "Problem",
-        "body": "Carrier payments were consistently delayed, which hurt our credit score and reputation with carriers. As a result, carriers charged us higher rates, lowering the brokerage’s margins."
+        "body": "Carrier payments were consistently delayed, which hurt our credit score and reputation with carriers. Carriers priced that risk into their rates, so slow payments became a margin problem on every load we moved."
       },
       {
         "heading": "Process",
@@ -38,7 +38,7 @@
       },
       {
         "heading": "Solution",
-        "body": "We built an agentic workflow that started the moment a shipment arrived at its destination, and took care of the repetitive tasks in three steps:\n- Collection: The agent reached out to the driver via SMS to request the POD. If it couldn’t get it, it reached out to the dispatcher, and later requested the invoice from the billing department.\n- Validation: Once the documents were in the system, the agent checked that their data matched our records. When the invoice total didn’t match, the agent created a line item for the difference with a “Review” status, so a rep could find where it came from and decide whether to approve or reject it.\n- Execution: Once the POD, the invoice and all payable line items were approved, the purchase order was executed automatically and payment was issued through the ERP.\n\nIf a document couldn’t be collected or validated within the expected time, the agent created an escalation with all the context needed for a human to step in and take the right action.",
+        "body": "We built an agentic workflow that started the moment a shipment arrived at its destination, and took care of the repetitive tasks in three steps:\n- Collection: The agent reached out to the driver via SMS to request the POD. If it couldn’t get it, it reached out to the dispatcher, and later requested the invoice from the billing department.\n- Validation: Once the documents were in the system, the agent checked that their data matched our records. When the invoice total didn’t match, often because of accessorial charges like detention, the agent created a line item for the difference with a “Review” status, so a rep could find where it came from and decide whether to approve or reject it.\n- Execution: Once the POD, the invoice and all payable line items were approved, the purchase order was executed automatically and payment was issued through the ERP.\n\nIf a document couldn’t be collected or validated within the expected time, the agent created an escalation with all the context needed for a human to step in and take the right action.",
         "images": [
           {
             "src": "/images/projects/ai-vendor-payments/pay-vendor-workflow.png",
@@ -50,7 +50,7 @@
       },
       {
         "heading": "Outcome",
-        "body": "The agentic workflow executed 95% of carrier payments automatically, without anyone touching them. Finance and Carrier Ops only stepped in when the agent raised an escalation, shifting their role from manual data entry and follow-ups to incident management. Paying carriers stopped taking up more bandwidth with every new load and became a scalable workflow that also improved Nuvocargo’s credit score and reputation with carriers.",
+        "body": "The agentic workflow executed 95% of carrier payments automatically, without anyone touching them. Finance and Carrier Ops only stepped in when the agent raised an escalation. Escalations worked as guardrails: the agent handled the routine work, and people made the judgment calls. Paying carriers stopped taking up more bandwidth with every new load and became a scalable workflow that also improved Nuvocargo’s credit score and reputation with carriers.",
         "testimonials": [
           {
             "quote": "Sebas brings a calm and collected presence to the team, consistently focusing on finding simple solutions to highly complex problems. His contributions are specially strong when balancing a scrappy execution mindset with thoughtful product thinking. He asks well-framed questions and takes time to think deeply about the problem, which leads to smarter solutions.",
@@ -83,7 +83,7 @@
       },
       {
         "heading": "Problem",
-        "body": "A common challenge in freight brokerage is a cash flow shortage. Brokers must pay carriers shortly after a shipment is delivered, while shippers can take 30 to 60 days to pay their invoices. Every day an invoice goes out late widens that gap.\n\nAt Nuvocargo, the finance team lacked a tool that showed which delivered loads were ready to be invoiced and which were still missing documentation.\n\nAdditionally, the experience wasn’t built for finance reps to quickly create invoices from within their workflow. It required going back and forth between interfaces."
+        "body": "Cash flow is one of the most overlooked levers in freight brokerage. Brokers pay carriers shortly after delivery, while shippers can take 30 to 60 days to pay. Every day an invoice goes out late widens that gap.\n\nAt Nuvocargo, the finance team lacked a tool that showed which delivered loads were ready to be invoiced and which were still missing documentation.\n\nAdditionally, the experience wasn’t built for finance reps to quickly create invoices from within their workflow. It required going back and forth between interfaces."
       },
       {
         "heading": "Process",
@@ -103,7 +103,7 @@
       },
       {
         "heading": "Outcome",
-        "body": "Gave the finance team clear visibility into which loads were ready to invoice and made it easier to execute them, reducing the time to invoice customers and improving cash flow.",
+        "body": "Gave the finance team a single view of which loads were invoice-ready and made executing them a few clicks inside their workflow. Invoices went out sooner after delivery, narrowing the gap between paying carriers and getting paid by shippers.",
         "testimonials": [
           {
             "quote": "Thanks for the constant push you make with the operation to make the project succeed. I know working with the ops team can be really difficult, however sometimes we need a push from someone like you to make things happen. You were on top of the project since day one.",
@@ -136,19 +136,19 @@
     "sections": [
       {
         "heading": "Context",
-        "body": "Nuvocargo’s 4PL (Fourth Party Logistics) customers had access to the Control Tower, an external-facing platform that surfaced data from the TMS so customers could see the status of their freight."
+        "body": "Nuvocargo’s 4PL (Fourth Party Logistics) customers, shippers who hand Nuvocargo their entire freight program, had access to the Control Tower, an external-facing platform that surfaced data from the TMS so customers could see the status of their freight."
       },
       {
         "heading": "Problem",
-        "body": "As the growth strategy shifted toward 4PL accounts, the Control Tower became a key resource for attracting new customers and increasing the satisfaction of existing ones."
+        "body": "As the growth strategy shifted toward 4PL accounts, the Control Tower became a key resource for winning new customers and keeping existing ones. But it showed TMS data without answering what these shippers cared about: how their freight was performing and where they were overspending."
       },
       {
         "heading": "Process",
-        "body": "I began the redesign by conducting research with internal stakeholders and with people at different levels on the customers’ side. This helped me understand what shippers in this segment valued most from their logistics providers:\n- Visibility into their loads and daily operations\n- Insights into their service performance and freight spend"
+        "body": "I began the redesign by conducting research with internal stakeholders and with people at different levels on the customers’ side. This helped me understand what shippers in this segment valued most from their logistics providers:\n- Visibility into their active loads and daily operations\n- Service performance, like on-time delivery and tender acceptance\n- Freight spend, like cost per pound and cost by lane and delivery location"
       },
       {
         "heading": "Solution",
-        "body": "I used our tech stack and agentic coding to prototype the new front end of the Control Tower. The redesign gave shippers clear visibility into their active loads, with a new drawer component to preview each load’s details. They could also see historical data for each lane, with AI-generated insights to help them improve service performance and optimize freight spend.\n\nOn this project I partnered with members of the C-suite. My output was a code branch with every design decision built in, using AI to eliminate the design-to-engineering handoff.",
+        "body": "I used our tech stack and agentic coding to prototype the new front end of the Control Tower. The redesign gave shippers clear visibility into their active loads, with a new drawer component to preview each load’s details. They could also see lane-level performance and cost history, with AI-generated insights to help them improve service performance and optimize freight spend.\n\nOn this project I partnered with members of the C-suite. My output was a code branch with every design decision built in, using AI to eliminate the design-to-engineering handoff.",
         "carousel": true,
         "images": [
           {
