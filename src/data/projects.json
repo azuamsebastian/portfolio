@@ -1,7 +1,7 @@
 [
   {
     "slug": "ai-vendor-payments",
-    "title": "Agentic Workflow to Pay Vendors On Time",
+    "title": "Agentic Workflow to Automate Payment to Vendors",
     "subtitle": "Turning accounts payable from manual data entry into exception management, with AI agents doing the routine work",
     "tags": [
       "Product Design",
@@ -50,7 +50,7 @@
       },
       {
         "heading": "Outcome",
-        "body": "Time to pay carriers decreased by 55%, and purchase orders that met all criteria were executed and paid without anyone touching them. Finance and Carrier Ops only stepped in when the agent raised an escalation, shifting their role from manual data entry and follow-ups to incident management. Paying carriers stopped taking up more bandwidth with every new load and became a scalable workflow that also improved Nuvocargo’s credit score and reputation with carriers.",
+        "body": "The agentic workflow executed 95% of carrier payments automatically, without anyone touching them. Finance and Carrier Ops only stepped in when the agent raised an escalation, shifting their role from manual data entry and follow-ups to incident management. Paying carriers stopped taking up more bandwidth with every new load and became a scalable workflow that also improved Nuvocargo’s credit score and reputation with carriers.",
         "testimonials": [
           {
             "quote": "Sebas brings a calm and collected presence to the team, consistently focusing on finding simple solutions to highly complex problems. His contributions are specially strong when balancing a scrappy execution mindset with thoughtful product thinking. He asks well-framed questions and takes time to think deeply about the problem, which leads to smarter solutions.",
