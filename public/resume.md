@@ -1,8 +1,8 @@
 # Sebastian Azua
 
-**Product Designer & Builder** | Mexico City
+**Product Strategy & AI Deployment** | Mexico City
 
-I’m a multi-cultural creative with 6+ years of experience building digital products and systems that drive business impact and make complex workflows feel simple. My skillset has been evolving with technology and I can leverage AI to own the end-to-end product development cycle.
+I build products and automations that increase operational efficiency and drive business growth. Most recently, owned the end-to-end implementation of features and AI workflows that enabled 3x profitability growth in freight brokerage.
 
 - Website: [sebastianazua.com](https://sebastianazua.com)
 - Email: [azuamsebastian@gmail.com](mailto:azuamsebastian@gmail.com)
@@ -10,54 +10,59 @@ I’m a multi-cultural creative with 6+ years of experience building digital pro
 
 ## Experience
 
-### Senior Product Designer & Builder at Nuvocargo
+### Nuvocargo
 
-2023 – 2026 | Mexico
+Series B, YC-backed North American Freight AI Platform
 
-- Increased operational efficiency and enabled the AI roll-up strategy by scoping, designing, and delivering workflows and features for a proprietary Transportation Management System.
-- Improved cash flow by designing AI workflows that perform outreach, document validation, and trigger the execution of sales orders and purchase orders – shortening the time to invoice customers and pay vendors.
-- Expanded the fourth-party logistics (4PL) offering by prototyping and deploying a customer-facing platform to give shippers visibility and AI-driven insights on their freight spend and service performance.
-- Helped sign the company’s first enterprise 4PL customer by scoping and designing the first end-to-end multi-stop shipment workflow, built to scale across other accounts.
+#### Technical Product Manager
 
-### UX Designer & Researcher at Nova Seguros Latam
+2024 – 2026 | Mexico
+
+- Increased operational efficiency and supported the AI rollup strategy, by scoping, designing, and delivering AI workflows and features that nearly tripled the acquired company’s EBITDA/gross profit from 14% to 40%.
+- Automated 95% of carrier payments by partnering with engineers to build an agentic workflow on Temporal and Claude models, to collect and validate documents, escalate exceptions to operators, and cut collection time from 7 days to 24 hours.
+- Helped cut delivery-to-invoice time from 8 to 3 days by embedding with finance team to replace manual spreadsheets with an invoicing-readiness system that showed which sales orders were ready to invoice and flagged defects.
+- Expanded the 4PL offering by gathering feedback from enterprise shippers to redesign the Control Tower, a customer-facing platform with real-time shipment visibility and AI-driven insights on freight spend, then prototyping in code and demoing it to customers and prospects.
+- Supported the company’s first enterprise fourth-party logistics (4PL) contract by partnering with sales and the customer’s operations team to translate their requirements into the platform’s first end-to-end multi-stop shipment workflow, built to scale across other accounts.
+- Improved accuracy of shipment ETAs by embedding with the monitoring team and prototyping with Gumloop and Snowflake to uncover the root cause, then scoping and leading a solution that restored their trust and adoption.
+
+#### Senior Product Designer
+
+2023 – 2024 | Mexico
+
+- Took shipment tracking from 0 to 1 by shadowing the monitoring team to map their operation, aligning stakeholders on requirements and delivering polished, high-fidelity designs that became the foundation for the tracking system.
+- Built trust in agentic workflows across the freight lifecycle by designing reusable UI components that showed real time progress and turned escalations into clear next steps, allowing operators to step in only when human judgment was needed.
+
+### Nova Seguros Latam
+
+#### UX Designer & Researcher
 
 2022 – 2023 | Ecuador, Colombia, Peru
 
-- Increased conversion in the insurance sales cycle by building a sales platform that allowed bank advisors to cross-sell insurance products during other customer transactions.
-- Assisted banks in the definition of their digital insurance offering by conducting research and workshops with stakeholders and users.
+- Defined a bank’s digital insurance offering by leading discovery workshops with customers and executive stakeholders across Ecuador, Colombia, and Peru, shaping the products later sold through digital channels.
+- Improved conversion in the insurance sales cycle by designing a platform that let bank advisors cross-sell insurance during other customer transactions.
 
-### Co-Founder at Forma Creative Studio
+### Forma Creative Studio
 
-2019 – 2026 | Global
+#### Co-Founder
 
-- Helped 30+ founders and brands grow online by building their visual identity, improving conversion rates through landing page design, and driving sales through e-commerce development.
+2018 – 2023 | Global
+
+- Helped 30+ founders and brands grow their businesses online by owning client relationships, from discovery and scoping to delivering branding, marketing strategy, and e-commerce sites.
 
 ## Education
 
-### Master’s in UX/UI & Digital Transformation, ELISAVA Barcelona
+### MA in Digital Transformation, ELISAVA Barcelona
 
-2022 | Online
+2022
 
-### BA in Communication & Multimedia, University of California, Santa Barbara
+### BA in Communication, University of California, Santa Barbara
 
-2018 | California, USA | Full-Ride Scholarship
+2014 – 2018 | Full-Ride Scholarship
 
-## Skills
+## Languages
 
-- Product Design & Management
-- AI Assisted Development
-- Workflow Automation
-- Strategic Problem Solving
-- Stakeholder Management
-
-## Tools
-
-- Claude Code
-- Lovable
-- Figma
-- Framer
-- Pencil.dev
-- Gumloop
+- Spanish: Native
+- English: Fluent
 
 ## Industries
 
@@ -74,8 +79,3 @@ I’m a multi-cultural creative with 6+ years of experience building digital pro
 - Branding
 - Writing
 - Photography
-
-## Languages
-
-- Spanish: Native
-- English: Professional Proficiency
